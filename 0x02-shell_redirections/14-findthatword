@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -f "hello word" /etc/passwd
+grep -f "root" /etc/passwd
