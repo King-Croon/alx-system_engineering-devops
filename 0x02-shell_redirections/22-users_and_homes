@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Current user: $(whoami)"; echo "Home directory: $HOME"
+cut -d: -f1,6 /etc/passwd | awk -F: '{ print "User:", $1, "\tHome Directory:", $2 }'
